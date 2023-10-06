@@ -21,7 +21,7 @@ Before you get started, make sure you have the following installed on your syste
   npm create vite@latest
   ```
 
-![Scroll Animation](public/image_animation_design.gif)
+![Scroll Animation](public/image_animation_demo.gif)
 
 ## Installation
 
