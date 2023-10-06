@@ -69,22 +69,30 @@ Before you get started, make sure you have the following installed on your syste
 
 ## Customization
 
-You can customize this animation by replacing the video source with your own video file. To do this, follow these steps:
+You can customize this animation in different ways, including:
 
-1. Replace the video file source in the src attribute of the <source> element within the video component:
+### Video Parallax
 
-   ```bash
-    <source src="your-video-file.mp4" type="video/mp4" />
+To create a video parallax effect, follow these steps:
+
+1. Replace the video file source in the `src` attribute of the `<source>` element within the `video` component in the `videoPlayer.js` file:
+
+   ```jsx
+   <source src="your-video-file.mp4" type="video/mp4" />
    ```
 
 2. Make sure the new video file is located in the same directory as your project or update the path accordingly.
 
-3. You can also adjust the speed variable in the handleScroll function to control the speed of video playback. A higher value will make the video scroll faster, and a lower value will make it scroll slower.
+3. You can also adjust the speed variable in the handleScroll function in the Home.js file to control the speed of video playback. A higher value will make the video scroll faster, and a lower value will make it scroll slower.
 
-4. To change the text displayed on the page, modify the content inside the element:
+### Image Sequence Parallax
 
-   ```bash
-   <h1 className="heading">YOUR CUSTOM TEXT HERE</h1>
-   ```
+To create an image sequence parallax effect, refer to the `App.js`. App.js demonstrates a simple image sequence parallax. You can further customize it by:
+
+1. Replacing the images in the public folder with your own image sequence. Make sure the images have sequential filenames like `frame1.png, frame2.png,` and so on.
+
+2. Update the logic in the app.js to load and display your image sequence as a parallax effect based on the scroll position.
+
+By combining these techniques, you can create engaging parallax effects both with videos and image sequences to enhance your animation.
 
 **_Feel free to use, modify, and extend this project for your own purposes. If you encounter any issues or have questions, please open an issue on the GitHub repository. Happy coding!_**
