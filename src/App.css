@@ -1,0 +1,26 @@
+.container {
+	height: 450vh;
+	width: 100vw;
+	scroll-behavior: smooth;
+}
+.heading_container {
+	display: grid;
+	place-content: center;
+}
+
+.heading {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	font-family: arial;
+	font-size: 27px;
+	color: #fdfdfd;
+}
+
+.video_animation {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+}
