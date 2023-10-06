@@ -5,13 +5,19 @@ function ImageScroll() {
 	const containerRef = useRef(null);
 	const [frameIndex, setFrameIndex] = useState(0);
 
-	const fallbackImage = "/desktop_parallax/image_001.webp";
+	const fallbackImage =
+		"...Image path of the first image in the sequence or any fallback image...";
 
 	const [images, setImages] = useState([]);
 
 	const totalFrames = 85;
+
+	// Your image path format may be different, so you may need to change the currentFrame function accordingly
+	// For example, if your image path format is /image_1.webp, /image_2.webp, etc.
+	// Then you can use the following function:
+
 	const currentFrame = (index) =>
-		`/desktop_parallax/image_${index.toString().padStart(3, "0")}.webp`;
+		`...image path...${index.toString().padStart(3, "0")}.webp`;
 
 	// Utility function to throttle resize events
 	function throttle(func, wait) {
